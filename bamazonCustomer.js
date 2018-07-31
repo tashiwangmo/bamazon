@@ -68,14 +68,14 @@ function purchase() {
 function shopping() {
     inquirer.prompt([
         {
-            name: "command",
+            name: "shopping",
             type: "list",
             message: "Continue shopping??",
             choices: ["YES", "NO"]
         }
     ]).then(function (ans) {
         
-        if (ans.command === "YES") {
+        if (ans.shopping === "YES") {
             start();
         } else {
             console.log("\nTHANK YOU FOR SHOPPING [^._.^]ﾉ彡\n")
